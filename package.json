@@ -1,0 +1,25 @@
+{
+  "name": "plc-tester-pwa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Web-based Modbus PLC tester (PWA) — open the website, install like an app, no .exe, no warnings. Works on phone, laptop, desktop.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.2.15",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "modbus-serial": "^8.0.17"
+  },
+  "optionalDependencies": {
+    "serialport": "^12.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.13",
+    "postcss": "^8.4.47",
+    "autoprefixer": "^10.4.20"
+  }
+}

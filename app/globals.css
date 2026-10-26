@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-ink;
+    background:
+      radial-gradient(1200px 500px at 80% -10%, #e6ecfb 0%, transparent 60%),
+      #eef1f6;
+  }
+}
+
+@layer components {
+  .field-label { @apply text-[13px] font-semibold text-ink2; }
+  .ctrl {
+    @apply h-11 rounded-[10px] border border-[#d6dbe4] bg-white px-3 text-[15px]
+           text-ink outline-none transition focus:border-brand
+           focus:ring-4 focus:ring-brand-soft;
+  }
+  .btn {
+    @apply inline-flex h-11 items-center gap-2 rounded-[10px] bg-brand px-5 text-[15px]
+           font-bold text-white transition hover:bg-brand-ink active:translate-y-px;
+  }
+  .btn-ghost {
+    @apply inline-flex h-11 items-center gap-2 rounded-[10px] border border-[#d6dbe4]
+           bg-white px-5 text-[15px] font-semibold text-ink transition hover:bg-[#f4f6f9];
+  }
+  .btn-danger { @apply bg-amber hover:brightness-95; }
+  .panel { @apply rounded-[14px] border border-line bg-white shadow-soft; }
+  .status {
+    @apply inline-flex items-center gap-2 rounded-full bg-[#f4f6f9] px-3.5 py-2
+           text-sm font-semibold text-muted;
+  }
+  .led { @apply h-[9px] w-[9px] rounded-full bg-[#aab2bf]; }
+}
